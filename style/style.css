@@ -1,0 +1,29 @@
+.bedroomLamp {
+ background-image: url('../assets/images/Ruang\ Kamar.jpeg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.lamp {
+ background-image: url('../assets/images/Image.jpeg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.kitchLamp {
+ background-image: url('../assets/images/Ruang\ Makan.jpeg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.famLamp {
+ background-image: url('../assets/images/Ruang\ Keluarga.jpeg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.livLamp {
+ background-image: url('../assets/images/Ruang\ Tamu.jpeg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
