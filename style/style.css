@@ -1,29 +1,74 @@
+
+img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Base Class untuk semua lamp */
+.lamp,
+.bedroomLamp,
+ .kitchLamp,
+ .famLamp,
+ .livLamp
+ {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 60vh; 
+  width: 100%;
+}
+
+
+/* Media Queries untuk Responsiveness */
+@media (min-width: 768px) {
+  .lamp,
+  .bedroomLamp,
+  .kitchLamp,
+  .famLamp,
+  .livLamp {
+    min-height: 80vh; /* Tinggi lebih besar di desktop */
+    background-attachment: fixed; /* Parallax effect */
+  }
+}
+
+/* Versi HD untuk layar retina */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  .bedroomLamp {
+    background-image: url('../assets/images/Ruang-Kamar@2x.jpeg');
+  }
+  .lamp {
+    background-image: url('../assets/images/Image@2x.jpeg');
+  }
+  .kitchLamp {
+    background-image: url('../assets/images/Ruang-Makan@2x.jpeg');
+  }
+  .famLamp {
+    background-image: url('../assets/images/Ruang-Keluarga@2x.jpeg');
+  }
+  .livLamp {
+    background-image: url('../assets/images/Ruang-Tamu@2x.jpeg');
+  }
+}
+
+/* Spesifik class untuk setiap gambar */
 .bedroomLamp {
- background-image: url('../assets/images/Ruang\ Kamar.jpeg');
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url('../assets/images/Ruang\ Kamar.jpeg');
 }
 
 .lamp {
- background-image: url('../assets/images/Image.jpeg');
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url('../assets/images/Image.jpeg');
 }
 
 .kitchLamp {
- background-image: url('../assets/images/Ruang\ Makan.jpeg');
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url('../assets/images/Ruang\ Makan.jpeg');
 }
 
 .famLamp {
- background-image: url('../assets/images/Ruang\ Keluarga.jpeg');
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url('../assets/images/Ruang\ Keluarga.jpeg');
 }
 
 .livLamp {
- background-image: url('../assets/images/Ruang\ Tamu.jpeg');
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url('../assets/images/Ruang\ Tamu.jpeg');
 }
